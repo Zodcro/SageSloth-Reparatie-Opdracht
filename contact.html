@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <title>Contact - SageSloth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <nav>
+            <h1>SageSloth</h1>
+            <div class="nav-links">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="practice.html">Practice</a>
+                <a class="nav-link" href="about.html">About</a>
+                <span class="nav-link is-active" aria-current="page">Contact</span>
+                <span class="nav-login-button">Player login</span>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section class="hero" aria-labelledby="contact-title">
+            <div class="hero-content">
+                <div class="status-badge">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    <p class="status-label">GUIDES ONLINE &middot; NO SPEEDRUN REQUIRED</p>
+                </div>
+                <h1 id="contact-title">Stuck on a level? Let&rsquo;s pause together.</h1>
+                <p>Questions about a reset, the course, or your very dramatic boss fight? Our calm crew is here&mdash;usually after one deep breath.</p>
+            </div>
+        </section>
+
+        <section class="contact-options" aria-label="Contact options">
+            <a class="contact-card email-card" href="mailto:hello@sagesloth.gg">
+                <span class="contact-icon"><img src="Images/mail-icon.png" alt=""></span>
+                <span class="contact-info">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-detail">hello@sagesloth.gg</span>
+                </span>
+            </a>
+            <a class="contact-card discord-card" href="https://discord.gg/sagesloth">
+                <span class="contact-icon"><img src="Images/console-icon.png" alt=""></span>
+                <span class="contact-info">
+                    <span class="contact-label">Discord</span>
+                    <span class="contact-detail">discord.gg/sagesloth</span>
+                </span>
+            </a>
+        </section>
+
+        <section class="message-card" aria-labelledby="message-title">
+            <p class="message-label">OPEN SUPPORT QUEST</p>
+            <h2 id="message-title">Send a slow message</h2>
+            <p class="message-intro">We reply within two business days. No perfect wording or maxed-out confidence needed.</p>
+            <form action="mailto:hello@sagesloth.gg" method="post" enctype="text/plain">
+                <div class="form-fields">
+                    <input type="text" name="name" placeholder="Your name" aria-label="Your name" autocomplete="name" required>
+                    <input type="email" name="email" placeholder="Your email" aria-label="Your email" autocomplete="email" required>
+                </div>
+                <input type="text" name="gamer-tag" placeholder="Gamer tag" aria-label="Gamer tag">
+                <textarea name="message" placeholder="Your message" aria-label="Your message" required></textarea>
+                <select name="preferred-reset" aria-label="Preferred reset">
+                    <option value="" selected>Preferred reset</option>
+                    <option value="respawn-breath">Respawn Breath</option>
+                    <option value="hands-off-hud">Hands Off HUD</option>
+                    <option value="tilt-cooldown">Tilt Cooldown</option>
+                    <option value="not-sure">Not sure yet</option>
+                </select>
+                <div class="form-actions">
+                    <p>By sending, you agree to be treated like a human&mdash;not a support ticket.</p>
+                    <button class="send-button" type="submit">Send message <span aria-hidden="true">&rarr;</span></button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h2>SageSloth</h2>
+            <p>Mindful resets for people who play.</p>
+        </div>
+        <div class="social-links">
+            <a href="https://discord.gg/sagesloth" aria-label="SageSloth on Discord"><img src="Images/discord-icon.png" alt=""></a>
+            <img src="Images/youtube-icon.png" alt="YouTube">
+            <img src="Images/twitch-icon.png" alt="Twitch">
+        </div>
+        <p class="copyright">&copy; 2026 SAGESLOTH.GG</p>
+    </footer>
+</body>
+</html>
